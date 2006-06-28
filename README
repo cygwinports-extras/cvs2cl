@@ -1,0 +1,43 @@
+cvs2cl
+------------------------------------------
+cvs2cl is a Perl script that produces a GNU-style ChangeLog for
+CVS-controlled sources, by running "cvs log" and parsing the output.
+
+Runtime requirements:
+  cvs
+  perl
+
+Canonical website:
+  http://www.red-bean.com/cvs2cl/
+
+-------------------------------------------
+
+Build instructions:
+  unpack cvs2cl-2.59-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./cvs2cl-2.59-X.cygport all
+
+This will create:
+  /usr/src/cvs2cl-2.59-X-src.tar.bz2
+  /usr/src/cvs2cl-2.59-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cvs2cl
+  /usr/share/doc/Cygwin/cvs2cl-2.59.README
+  /usr/share/man/man1/cvs2cl.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 2.59-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

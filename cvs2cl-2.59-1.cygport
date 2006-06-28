@@ -1,0 +1,19 @@
+inherit perl
+
+DESCRIPTION=
+HOMEPAGE="http://www.red-bean.com/cvs2cl/"
+SRC_URI="http://www.red-bean.com/cvs2cl/cvs2cl.pl"
+SRC_DIR=.
+
+src_compile() {
+	cd ${B}
+	verbose pod2man --section=1 ${S}/cvs2cl.pl cvs2cl.1 || error "pod2man failed"
+}
+
+src_test() { :; }
+
+src_install() {
+	cd ${B}
+	newbin ${S}/cvs2cl.pl cvs2cl
+	doman cvs2cl.1
+}

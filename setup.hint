@@ -1,0 +1,5 @@
+category: Devel
+requires: cvs perl
+sdesc: "CVS log to ChangeLog script"
+ldesc: "cvs2cl is a Perl script that produces a GNU-style ChangeLog for
+CVS-controlled sources, by running "cvs log" and parsing the output."
